@@ -1,0 +1,98 @@
+[debug] [2021-02-28T10:05:54.545Z] ----------------------------------------------------------------------
+[debug] [2021-02-28T10:05:54.546Z] Command:       /usr/local/Cellar/node/15.0.1/bin/node /usr/local/bin/firebase init hosting:github
+[debug] [2021-02-28T10:05:54.546Z] CLI Version:   8.13.1
+[debug] [2021-02-28T10:05:54.547Z] Platform:      darwin
+[debug] [2021-02-28T10:05:54.547Z] Node Version:  v15.0.1
+[debug] [2021-02-28T10:05:54.547Z] Time:          Sun Feb 28 2021 17:05:54 GMT+0700 (Indochina Time)
+[debug] [2021-02-28T10:05:54.548Z] ----------------------------------------------------------------------
+[debug] [2021-02-28T10:05:54.548Z] 
+[debug] [2021-02-28T10:05:54.552Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-02-28T10:05:54.553Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/loctv/Documents/firebase
+
+Before we get started, keep in mind:
+
+  * You are initializing in an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  .firebaserc already has a default project, using hotmobile-697ec. 
+[debug] [2021-02-28T10:05:54.559Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/hotmobile-697ec  
+ 
+[debug] [2021-02-28T10:05:55.148Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sun, 28 Feb 2021 10:05:55 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+=== Hosting:github Setup
+[info] 
+[info] i  Detected a .git folder at /Users/loctv/Documents/firebase/hot_firebase 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=542560458&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2021-02-28T10:05:55.802Z] >>> HTTP REQUEST POST https://github.com/login/oauth/access_token  
+ {"client_id":"89cf50f02ac6aaed3484","client_secret":"3330d14abc895d9a74d5f17cd7a00711fa2c5bf0","code":"a75a51d658f462295f1f","redirect_uri":"http://localhost:9005","state":"542560458"}
+[debug] [2021-02-28T10:05:56.294Z] <<< HTTP RESPONSE 200 {"server":"GitHub.com","date":"Sun, 28 Feb 2021 10:05:56 GMT","content-type":"application/json; charset=utf-8","vary":"X-PJAX, Accept-Encoding, Accept, X-Requested-With","etag":"W/\"3755e54f760a857769df30b64301a5d5\"","cache-control":"max-age=0, private, must-revalidate","strict-transport-security":"max-age=31536000; includeSubdomains; preload","x-frame-options":"deny","x-content-type-options":"nosniff","x-xss-protection":"1; mode=block","referrer-policy":"origin-when-cross-origin, strict-origin-when-cross-origin","expect-ct":"max-age=2592000, report-uri=\"https://api.github.com/_private/browser/errors\"","content-security-policy":"default-src 'none'; base-uri 'self'; block-all-mixed-content; connect-src 'self' uploads.github.com www.githubstatus.com collector.githubapp.com api.github.com github-cloud.s3.amazonaws.com github-production-repository-file-5c1aeb.s3.amazonaws.com github-production-upload-manifest-file-7fdce7.s3.amazonaws.com github-production-user-asset-6210df.s3.amazonaws.com cdn.optimizely.com logx.optimizely.com/v1/events wss://alive.github.com; font-src github.githubassets.com; form-action 'self' github.com gist.github.com; frame-ancestors 'none'; frame-src render.githubusercontent.com; img-src 'self' data: github.githubassets.com identicons.github.com collector.githubapp.com github-cloud.s3.amazonaws.com user-images.githubusercontent.com/ *.githubusercontent.com; manifest-src 'self'; media-src 'none'; script-src github.githubassets.com; style-src 'unsafe-inline' github.githubassets.com; worker-src github.com/socket-worker-5029ae85.js gist.github.com/socket-worker-5029ae85.js","x-github-request-id":"DE4D:031E:10721A:117BD2:603B6B03","transfer-encoding":"chunked"}
+[debug] [2021-02-28T10:05:56.294Z] >>> HTTP REQUEST GET https://api.github.com/user  
+ 
+[debug] [2021-02-28T10:05:56.832Z] <<< HTTP RESPONSE 200 {"server":"GitHub.com","date":"Sun, 28 Feb 2021 10:05:56 GMT","content-type":"application/json; charset=utf-8","content-length":"1389","cache-control":"private, max-age=60, s-maxage=60","vary":"Accept, Authorization, Cookie, X-GitHub-OTP, Accept-Encoding, Accept, X-Requested-With","etag":"\"85c7d3a1b19bcf6a9de3d3bae660652e88aa92037019649712383f8ed4af308b\"","last-modified":"Sun, 28 Feb 2021 10:05:39 GMT","x-oauth-scopes":"read:user, repo","x-accepted-oauth-scopes":"","x-oauth-client-id":"89cf50f02ac6aaed3484","x-github-media-type":"github.v3","x-ratelimit-limit":"5000","x-ratelimit-remaining":"4968","x-ratelimit-reset":"1614508837","x-ratelimit-used":"32","access-control-expose-headers":"ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation, Sunset","access-control-allow-origin":"*","strict-transport-security":"max-age=31536000; includeSubdomains; preload","x-frame-options":"deny","x-content-type-options":"nosniff","x-xss-protection":"1; mode=block","referrer-policy":"origin-when-cross-origin, strict-origin-when-cross-origin","content-security-policy":"default-src 'none'","x-github-request-id":"DE50:4A62:4F25:1017D:603B6B04"}
+[info] 
+[info] ✔  Success! Logged into GitHub as xuanloct4 
+[info] 
+[debug] [2021-02-28T10:06:07.285Z] >>> HTTP REQUEST GET https://api.github.com/repos//hot_firebase/actions/secrets/public-key?type=owner  
+ 
+[debug] [2021-02-28T10:06:07.813Z] <<< HTTP RESPONSE 404 {"server":"GitHub.com","date":"Sun, 28 Feb 2021 10:06:07 GMT","content-type":"application/json; charset=utf-8","content-length":"74","x-oauth-scopes":"read:user, repo","x-accepted-oauth-scopes":"repo","x-oauth-client-id":"89cf50f02ac6aaed3484","x-github-media-type":"github.v3","x-ratelimit-limit":"5000","x-ratelimit-remaining":"4967","x-ratelimit-reset":"1614508837","x-ratelimit-used":"33","access-control-expose-headers":"ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation, Sunset","access-control-allow-origin":"*","strict-transport-security":"max-age=31536000; includeSubdomains; preload","x-frame-options":"deny","x-content-type-options":"nosniff","x-xss-protection":"1; mode=block","referrer-policy":"origin-when-cross-origin, strict-origin-when-cross-origin","content-security-policy":"default-src 'none'","vary":"Accept-Encoding, Accept, X-Requested-With","x-github-request-id":"8F57:416D:1860A:23A3B:603B6B0F"}
+[debug] [2021-02-28T10:06:07.814Z] <<< HTTP RESPONSE BODY Not Found {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2021-02-28T10:06:11.830Z] >>> HTTP REQUEST GET https://api.github.com/repos/hot_firebase/actions/secrets/public-key?type=owner  
+ 
+[debug] [2021-02-28T10:06:12.318Z] <<< HTTP RESPONSE 404 {"server":"GitHub.com","date":"Sun, 28 Feb 2021 10:06:12 GMT","content-type":"application/json; charset=utf-8","content-length":"74","x-oauth-scopes":"read:user, repo","x-accepted-oauth-scopes":"repo","x-oauth-client-id":"89cf50f02ac6aaed3484","x-github-media-type":"github.v3","x-ratelimit-limit":"5000","x-ratelimit-remaining":"4966","x-ratelimit-reset":"1614508837","x-ratelimit-used":"34","access-control-expose-headers":"ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation, Sunset","access-control-allow-origin":"*","strict-transport-security":"max-age=31536000; includeSubdomains; preload","x-frame-options":"deny","x-content-type-options":"nosniff","x-xss-protection":"1; mode=block","referrer-policy":"origin-when-cross-origin, strict-origin-when-cross-origin","content-security-policy":"default-src 'none'","vary":"Accept-Encoding, Accept, X-Requested-With","x-github-request-id":"DE52:7BCB:559C5:613C7:603B6B13"}
+[debug] [2021-02-28T10:06:12.319Z] <<< HTTP RESPONSE BODY Not Found {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2021-02-28T10:06:12.375Z] >>> HTTP REQUEST GET https://api.github.com/repos//actions/secrets/public-key?type=owner  
+ 
+[debug] [2021-02-28T10:06:12.856Z] <<< HTTP RESPONSE 404 {"server":"GitHub.com","date":"Sun, 28 Feb 2021 10:06:12 GMT","content-type":"application/json; charset=utf-8","content-length":"74","x-oauth-scopes":"read:user, repo","x-accepted-oauth-scopes":"repo","x-oauth-client-id":"89cf50f02ac6aaed3484","x-github-media-type":"github.v3","x-ratelimit-limit":"5000","x-ratelimit-remaining":"4965","x-ratelimit-reset":"1614508837","x-ratelimit-used":"35","access-control-expose-headers":"ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation, Sunset","access-control-allow-origin":"*","strict-transport-security":"max-age=31536000; includeSubdomains; preload","x-frame-options":"deny","x-content-type-options":"nosniff","x-xss-protection":"1; mode=block","referrer-policy":"origin-when-cross-origin, strict-origin-when-cross-origin","content-security-policy":"default-src 'none'","vary":"Accept-Encoding, Accept, X-Requested-With","x-github-request-id":"8F59:416E:5B38F:66E14:603B6B14"}
+[debug] [2021-02-28T10:06:12.856Z] <<< HTTP RESPONSE BODY Not Found {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2021-02-28T10:06:21.117Z] >>> HTTP REQUEST GET https://api.github.com/repos/https://github.com/xuanloct4/hot_firebase.git/actions/secrets/public-key?type=owner  
+ 
+[debug] [2021-02-28T10:06:21.567Z] <<< HTTP RESPONSE 404 {"server":"GitHub.com","date":"Sun, 28 Feb 2021 10:06:21 GMT","content-type":"application/json; charset=utf-8","content-length":"74","x-oauth-scopes":"read:user, repo","x-accepted-oauth-scopes":"repo","x-oauth-client-id":"89cf50f02ac6aaed3484","x-github-media-type":"github.v3","x-ratelimit-limit":"5000","x-ratelimit-remaining":"4964","x-ratelimit-reset":"1614508837","x-ratelimit-used":"36","access-control-expose-headers":"ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation, Sunset","access-control-allow-origin":"*","strict-transport-security":"max-age=31536000; includeSubdomains; preload","x-frame-options":"deny","x-content-type-options":"nosniff","x-xss-protection":"1; mode=block","referrer-policy":"origin-when-cross-origin, strict-origin-when-cross-origin","content-security-policy":"default-src 'none'","vary":"Accept-Encoding, Accept, X-Requested-With","x-github-request-id":"DE54:551B:569F1:624B1:603B6B1D"}
+[debug] [2021-02-28T10:06:21.567Z] <<< HTTP RESPONSE BODY Not Found {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2021-02-28T10:06:21.703Z] >>> HTTP REQUEST GET https://api.github.com/repos//actions/secrets/public-key?type=owner  
+ 
+[debug] [2021-02-28T10:06:22.173Z] <<< HTTP RESPONSE 404 {"server":"GitHub.com","date":"Sun, 28 Feb 2021 10:06:22 GMT","content-type":"application/json; charset=utf-8","content-length":"74","x-oauth-scopes":"read:user, repo","x-accepted-oauth-scopes":"repo","x-oauth-client-id":"89cf50f02ac6aaed3484","x-github-media-type":"github.v3","x-ratelimit-limit":"5000","x-ratelimit-remaining":"4963","x-ratelimit-reset":"1614508837","x-ratelimit-used":"37","access-control-expose-headers":"ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation, Sunset","access-control-allow-origin":"*","strict-transport-security":"max-age=31536000; includeSubdomains; preload","x-frame-options":"deny","x-content-type-options":"nosniff","x-xss-protection":"1; mode=block","referrer-policy":"origin-when-cross-origin, strict-origin-when-cross-origin","content-security-policy":"default-src 'none'","vary":"Accept-Encoding, Accept, X-Requested-With","x-github-request-id":"8F5B:551B:56A09:624C9:603B6B1D"}
+[debug] [2021-02-28T10:06:22.174Z] <<< HTTP RESPONSE BODY Not Found {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2021-02-28T10:08:37.737Z] ----------------------------------------------------------------------
+[debug] [2021-02-28T10:08:37.739Z] Command:       /usr/local/Cellar/node/15.0.1/bin/node /usr/local/bin/firebase deploy
+[debug] [2021-02-28T10:08:37.739Z] CLI Version:   8.13.1
+[debug] [2021-02-28T10:08:37.739Z] Platform:      darwin
+[debug] [2021-02-28T10:08:37.739Z] Node Version:  v15.0.1
+[debug] [2021-02-28T10:08:37.740Z] Time:          Sun Feb 28 2021 17:08:37 GMT+0700 (Indochina Time)
+[debug] [2021-02-28T10:08:37.740Z] ----------------------------------------------------------------------
+[debug] [2021-02-28T10:08:37.740Z] 
+[debug] [2021-02-28T10:08:37.746Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-02-28T10:08:37.746Z] > authorizing via signed-in user
+[debug] [2021-02-28T10:08:37.746Z] [iam] checking project hotmobile-697ec for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2021-02-28T10:08:37.749Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/hotmobile-697ec:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2021-02-28T10:08:38.780Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sun, 28 Feb 2021 10:08:38 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=818","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-02-28T10:08:38.784Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/hotmobile-697ec  
+ 
+[debug] [2021-02-28T10:08:39.466Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sun, 28 Feb 2021 10:08:39 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Deploying to 'hotmobile-697ec'...
+[info] 
+[info] i  deploying hosting 
+[error] 
+[error] Error: Specified public directory 'public' does not exist, can't deploy hosting to site hotmobile-697ec
